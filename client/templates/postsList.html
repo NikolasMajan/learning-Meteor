@@ -1,0 +1,16 @@
+<Template name= "postsList">
+  <ul class="post-list">
+    {{#each posts}}
+    <li class="post">
+      <div>{{content}}</div>
+      <div>{{username}}
+        {{#if isFollowing}}      
+        <a class="unfollow-link">Unfollow</a>
+        {{else}}
+        <a class="follow-link">Follow</a>
+        {{/if}}
+      </div>
+    </li>
+    {{/each}}
+  </ul>
+</Template>

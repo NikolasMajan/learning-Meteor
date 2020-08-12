@@ -1,0 +1,19 @@
+<head>
+  <meta charset="utf-8" />
+    <title>Social-Network</title>
+</head>
+
+<body>
+  {{>loginButtons}}
+  <div id="wrapper">
+        <div id="profile-area">
+          {{> profileArea}}
+        </div>
+        <div id="feed-area">
+          {{#if currentUser}}
+          {{> postForm}}
+          {{/if}}
+          {{> postsList}}
+        </div>
+    </div>
+</body>
